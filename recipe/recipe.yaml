@@ -1,6 +1,6 @@
 context:
   name: sqruff
-  version: 0.21.3
+  version: "0.24.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/quarylabs/sqruff/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: c54f806ab40c8a92ea0bd839219988d74ed44b45aaee234f958381365783fa00
+  sha256: 632db2a518acc7ec7116fcf16230a053dd146f8469592973bf0e74e80e3f87d0
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -23,7 +23,7 @@ requirements:
 
 tests:
   - script:
-    - sqruff --help
+      - sqruff --help
 
 about:
   homepage: https://github.com/quarylabs/sqruff
